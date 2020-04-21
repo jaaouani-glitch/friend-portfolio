@@ -1,17 +1,16 @@
-import React from 'react'
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import React               from 'react';
+import { withRouter }      from 'next/router';
+import { WithRouterProps } from 'next/dist/client/with-router';
 
-const AboutPage: React.FunctionComponent = () => (
-  <Layout title="About | Next.js + TypeScript Example">
-    <h1>About</h1>
-    <p>This is the about page</p>
-    <p>
-      <Link href="/">
-        <a>Go home</a>
-      </Link>
-    </p>
-  </Layout>
-)
+import Layout     from '../components/layout'
 
-export default AboutPage
+class AboutPage extends React.Component<WithRouterProps> {
+  render() {
+    return(
+      <Layout title="About | We provide a quality service to all your desires." className="about-index" router={this.props.router}>
+      </Layout>
+    );
+  }
+}
+
+export default withRouter(AboutPage);

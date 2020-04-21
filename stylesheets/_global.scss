@@ -1,0 +1,21 @@
+@charset 'UTF-8';
+
+.header-global-default              { max-height: 45px; min-width: 100vw; max-width: 100vw; background-color: #000; }
+.footer-global-default              { position: fixed; bottom: 0px; min-width: 100vw; max-width: 100vw; max-height: 45px; background-color: transparent; }
+.logo-header                        { max-width: 42px; }
+.h-link                             { color: #fff; font-family: 'Nunito Bold', Arial, Helvetica, sans-serif; font-size: 12px; }
+.h-link:hover                       { cursor: pointer; }
+.bar                                { border: 1.5px solid #fff; border-radius: 8px; }
+.deco-bar                           { min-width: 30px; border: 1.5px dashed #fff; border-radius: 8px; }
+
+.copy, .authors                             { color: #fff; font-family: 'Nunito ExtraBold', Arial, Helvetica, sans-serif; font-size: 11px; }
+.author-link:hover                          { cursor: pointer ;}
+.promo                                      { font-size: 10px; color: #fff; font-family: 'Nunito ExtraBold'; }
+
+@media all and (max-width: 1120px)   {
+    .authors        { display: none; }
+    .logo-header    { display: none; }
+    .h-logo         { display: none; }
+    .header-global-default { justify-content: center;}
+    .footer-global-default { justify-content: space-around; }
+}
