@@ -7,6 +7,7 @@ import Link                from 'next/link';
 //@ts-ignore
 import Typical             from 'react-typical';
 import { TiArrowRight }    from 'react-icons/ti';
+import Lightbox            from 'react-image-lightbox';
 
 import Slide      from '../components/slide';
 import Layout     from '../components/layout'
@@ -17,11 +18,11 @@ import image1     from '../resources/images/image-1.jpg';
 import image2     from '../resources/images/image-2.jpg';
 import logo       from '../resources/images/logo.png';
 
-type State = { index: number };
+type State = { index: number, open: boolean };
 
 class IndexPage extends React.Component<WithRouterProps, State> {
   constructor(props: any) { super(props);
-    this.state      = { index: 0 };
+    this.state      = { index: 0, open: false };
     this.change     = this.change.bind(this);
   }
 
@@ -45,6 +46,7 @@ class IndexPage extends React.Component<WithRouterProps, State> {
     return(
       <Layout title="Nokta | An innovative & creative agency at your service." className="home-index" router={this.props.router}>
         <img src={logo} className="logo-mobile" />
+        { this.state.open && this.state.index != 0 && <Lightbox mainSrc={slides[this.state.index]} onCloseRequest={() => { this.setState({ open: false }) }} />}
         <Slider {...parameters} afterChange={this.change}>
           <Slide>
             <div className="flex flex-col text-start">
@@ -68,7 +70,7 @@ class IndexPage extends React.Component<WithRouterProps, State> {
                     <span className="title-done">FOOD TRUCK</span>
                     <p className="slide-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae porta erat</p>
                   </div>
-                  <img src={slides[1]} className="animated slideInRight slide-box-image" />
+                  <img src={slides[1]} className="animated slideInRight slide-box-image" onClick={() => { this.setState({ open: true }); }} />
                 </div>
               }
             </div>
@@ -81,7 +83,7 @@ class IndexPage extends React.Component<WithRouterProps, State> {
                     <span className="title-done">Caillou</span>
                     <p className="slide-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae porta erat</p>
                   </div>
-                  <img src={slides[2]} className="animated slideInRight slide-box-image" />
+                  <img src={slides[2]} className="animated slideInRight slide-box-image" onClick={() => { this.setState({ open: true }); }}  />
                 </div>
               }
             </div>
@@ -94,7 +96,7 @@ class IndexPage extends React.Component<WithRouterProps, State> {
                     <span className="title-done">La nuitée</span>
                     <p className="slide-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae porta erat</p>
                   </div>
-                  <img src={slides[3]} className="animated slideInRight slide-box-image" />
+                  <img src={slides[3]} className="animated slideInRight slide-box-image" onClick={() => { this.setState({ open: true }); }} />
                 </div>
               }
             </div>

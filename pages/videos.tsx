@@ -9,11 +9,11 @@ import Layout     from '../components/layout'
 
 import logo       from '../resources/images/logo.png';
 
-type State = { index: number };
+type State = { index: number, open: boolean };
 
 class VideoPage extends React.Component<WithRouterProps, State> {
   constructor(props: any) { super(props);
-    this.state      = { index: 0 };
+    this.state      = { index: 0, open: false };
     this.change     = this.change.bind(this);
   }
 
