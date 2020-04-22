@@ -20,6 +20,9 @@ input                   { font-family: 'Nunito SemiBold', Arial, Helvetica, sans
 .contact-confirm:focus  { outline: 0; outline-width: 0; }
 .error-text             { font-size: 12px; font-family: 'Nunito Bold', Arial, Helvetica, sans-serif; font-size: 12px; }
 
+.profile-image          { position: relative; max-width: 200px; border-radius: 50%; }
+.self-description       { max-width: 320px; text-align: justify; font-size: 13px; font-family: 'Nunito Bold', Arial, Helvetica, sans-serif; line-height: 1.65em; }
+
 @media all and (max-width: 1120px) {
     .one-slide     { flex-direction: column; justify-content: center; align-items: center; }
     .image-contact { display: none; }

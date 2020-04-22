@@ -1,13 +1,13 @@
 .logo-mobile-video                                { display: none; }
 .slide-box-video                                  { min-width: 800px; background: transparent; position: absolute; top: 25vh; }
 .slide-v-description                              { color: #000000; position: relative; left: -36vw; color: #D5D5D5; max-width: 280px; top: -60px; font-family: 'Nunito SemiBold', Arial, Helvetica, sans-serif; font-size: 17px; text-align: justify; }
-.title-v-done                                       { position: relative; z-index: 1; font-size: 100px; font-family: 'Crimson Text Bold', Arial, Helvetica, sans-serif; color: #000; top: -50px; left: -16vw; }
+.title-v-done                                       { position: relative; z-index: 1; font-size: 100px; font-family: 'Crimson Text Bold', Arial, Helvetica, sans-serif; color: #202040; top: -50px; left: -14vw; }
 
 @media all and (max-width: 1120px) {
     .logo-mobile-video                            { position: absolute; bottom: 70px; max-width: 34px; display: block; left: calc(50vw - 15px); }
     .slide-box-video                              { min-width: 100vw; background: transparent; position: absolute; top: 25vh; }
     .slide-v-description                          { color: #000000; color: #D5D5D5; max-width: 280px; font-family: 'Nunito SemiBold', Arial, Helvetica, sans-serif; font-size: 17px; text-align: justify; position: absolute;  top: 60px !important; left: 5vw; }
     .hey-mobile                                   { position: absolute !important; top: 40px !important; }
-    .title-v-done                                 { position: relative; z-index: 1; font-size: 20px; font-family: 'Crimson Text Bold', Arial, Helvetica, sans-serif; color: #000; text-align: center; min-width: 200px; position: absolute; top: 10px; left: 0vw; }
+    .title-v-done                                 { position: relative; z-index: 1; font-size: 20px; font-family: 'Crimson Text Bold', Arial, Helvetica, sans-serif; color: #202040; text-align: center; min-width: 200px; position: absolute; top: 10px; left: 0vw; }
     .text-white                                   { color: #000 !important; }
 }

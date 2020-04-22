@@ -21,14 +21,14 @@
 .main-title                                 { font-family: 'Crimson Text Bold', Arial, Helvetica, sans-serif; font-size: 50px; color: #000; line-height: 30px; height: 90px; }
 .home-bar                                   { border: 3px solid #000; border-radius: 10px; min-width: 85px; max-width: 85px; }
 .description                                { max-width: 320px; color: #000; font-size: 12px; font-family: 'Nunito Bold', Arial, Helvetica, sans-serif; text-align: justify; position: relative; left: 20px; }
-.link-about                                 { background-color: #000; color: #fff; max-width: 100px; }
+.link-about                                 { background-color: #202040; color: #fff; max-width: 100px; }
 .link-about:hover                           { cursor: pointer; }
 
 .home-image                                 { max-width: 700px; position: relative; left: 100px; }
 .sub-title                                  { color: #fff; font-size: 12px; font-family: 'Nunito ExtraBold'; text-transform: uppercase; }
 .phone-mockup                               { z-index: -1; overflow: hidden; max-width: 70vw; position: relative; top: 40vh; }
 .title-bg                                   { position: absolute; z-index: 1; font-size: 140px; font-family: 'Crimson Text Bold', Arial, Helvetica, sans-serif; color: #000; }
-.title-done                                 { position: relative; z-index: 1; font-size: 100px; font-family: 'Crimson Text Bold', Arial, Helvetica, sans-serif; color: #000; top: -50px; left: -16vw; }
+.title-done                                 { position: relative; z-index: 1; font-size: 100px; font-family: 'Crimson Text Bold', Arial, Helvetica, sans-serif; color: #202040; top: -50px; left: -16vw; }
 
 .slide-box-image                            { max-height: 400px; background: transparent; position: absolute; top: 15vh; }
 .d-home                                     { max-height: 20px; }
@@ -41,7 +41,7 @@
     .slide-home                             { display: flex; flex-direction: column !important; justify-content: center !important; align-items: center !important; }
     .phone-mockup                           { visibility: hidden; }
     .title-bg                               { display: none; }
-    .title-done                             { position: relative; z-index: 1; font-size: 20px; font-family: 'Crimson Text Bold', Arial, Helvetica, sans-serif; color: #000; text-align: center; min-width: 200px; left: inherit; }
+    .title-done                             { position: relative; z-index: 1; font-size: 20px; font-family: 'Crimson Text Bold', Arial, Helvetica, sans-serif; color: #202040; text-align: center; min-width: 200px; left: inherit; }
 
     .slide-description                      { color: #000000; color: #D5D5D5; max-width: 280px; font-family: 'Nunito SemiBold', Arial, Helvetica, sans-serif; font-size: 17px; text-align: justify; left: inherit; top: inherit; }
     .slide-box-image                        { position: relative; min-width: 100vw !important;  max-width: 400px !important; top: 6px; }
