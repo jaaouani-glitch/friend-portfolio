@@ -1,16 +1,18 @@
 @charset 'UTF-8';
 
-.header-global-default              { max-height: 45px; min-width: 100vw; max-width: 100vw; background-color: #000; }
+.header-global-default              { max-height: 45px; min-width: 100vw; max-width: 100vw; background-color: #fff; }
 .footer-global-default              { position: fixed; bottom: 0px; min-width: 100vw; max-width: 100vw; max-height: 45px; background-color: transparent; }
-.logo-header                        { max-width: 42px; }
-.h-link                             { color: #fff; font-family: 'Nunito Bold', Arial, Helvetica, sans-serif; font-size: 12px; }
+.logo-header                        { max-width: 24px; }
+.h-link                             { color: #000; font-family: 'Nunito Bold', Arial, Helvetica, sans-serif; font-size: 12px; }
 .h-link:hover                       { cursor: pointer; }
-.bar                                { border: 1.5px solid #fff; border-radius: 8px; }
+.bar                                { border: 1.5px solid #000; border-radius: 8px; }
 .deco-bar                           { min-width: 30px; border: 1.5px dashed #fff; border-radius: 8px; }
 
 .copy, .authors                             { color: #fff; font-family: 'Nunito ExtraBold', Arial, Helvetica, sans-serif; font-size: 11px; }
+.authors                                    { color: #000; }
 .author-link:hover                          { cursor: pointer ;}
-.promo                                      { font-size: 10px; color: #fff; font-family: 'Nunito ExtraBold'; }
+.promo                                      { display: none; }
+.bg-black-footer                    { position: absolute; bottom: 0px; min-height: 40px; min-width: 80vw; right: 0px;  background-color: #000; z-index: -1; }
 
 @media all and (max-width: 1120px)   {
     .authors        { display: none; }
@@ -18,4 +20,5 @@
     .h-logo         { display: none; }
     .header-global-default { justify-content: center;}
     .footer-global-default { justify-content: space-around; }
+    .bg-black-footer       { min-width: 100vw; }
 }

@@ -11,14 +11,14 @@
 
 .footer-global-default div[aria-label="animation"] { -webkit-transform: rotate(-270deg); transform: rotate(-270deg); }
 
-.home-index                                 { background-color: #000; min-width: 100vw; max-width: 100vw; min-height: 100vh; max-height: 100vh; overflow: hidden; }
+.home-index                                 { background-color: #fff; min-width: 100vw; max-width: 100vw; min-height: 100vh; max-height: 100vh; overflow: hidden; }
 .slick-slider                               { color: #fff; min-height: calc(100vh - 50px); }
 .slick-dots                                 { position: absolute; bottom: 15px; }
 .slick-dots li button::before               { border-color: #fff; }
 .slide-home                                 { min-height: calc(100vh - 50px); }
 
-.main-title                                 { font-family: 'Crimson Text Bold', Arial, Helvetica, sans-serif; font-size: 50px; }
-.home-bar                                   { border: 3px solid #fff; border-radius: 10px; min-width: 43px; max-width: 43px; }
+.main-title                                 { font-family: 'Crimson Text Bold', Arial, Helvetica, sans-serif; font-size: 50px; color: #000; line-height: 30px; height: 90px; }
+.home-bar                                   { border: 3px solid #000; border-radius: 10px; min-width: 85px; max-width: 85px; }
 .description                                { max-width: 320px; color: #000; font-size: 12px; font-family: 'Nunito Bold', Arial, Helvetica, sans-serif; text-align: justify; position: relative; left: 20px; }
 .link-about                                 { background-color: #000; color: #fff; max-width: 100px; }
 .link-about:hover                           { cursor: pointer; }
@@ -26,9 +26,24 @@
 .home-image                                 { max-width: 700px; position: relative; left: 100px; }
 .sub-title                                  { color: #fff; font-size: 12px; font-family: 'Nunito ExtraBold'; text-transform: uppercase; }
 .phone-mockup                               { z-index: -1; overflow: hidden; max-width: 70vw; position: relative; top: 40vh; }
+.title-bg                                   { position: absolute; z-index: 1; font-size: 140px; font-family: 'Crimson Text Bold', Arial, Helvetica, sans-serif; color: #000; }
+.title-done                                 { position: relative; z-index: 1; font-size: 100px; font-family: 'Crimson Text Bold', Arial, Helvetica, sans-serif; color: #000; top: -50px; left: -16vw; }
+
+.slide-box-image                            { max-height: 400px; background: transparent; position: absolute; top: 15vh; }
+.d-home                                     { max-height: 20px; }
+.c-space  p                                 { letter-spacing: 14px; position: relative; top: -30px; }
+.slide-description                          { color: #000000; position: relative; left: -36vw; color: #D5D5D5; max-width: 280px; top: -60px; font-family: 'Nunito SemiBold', Arial, Helvetica, sans-serif; font-size: 17px; text-align: justify; }
+.logo-mobile                                { display: none; }
 
 @media all and (max-width: 1120px) {
     .cover-home                             { display: none; }
     .slide-home                             { display: flex; flex-direction: column !important; justify-content: center !important; align-items: center !important; }
     .phone-mockup                           { visibility: hidden; }
+    .title-bg                               { display: none; }
+    .title-done                             { position: relative; z-index: 1; font-size: 20px; font-family: 'Crimson Text Bold', Arial, Helvetica, sans-serif; color: #000; text-align: center; min-width: 200px; left: inherit; }
+
+    .slide-description                      { color: #000000; color: #D5D5D5; max-width: 280px; font-family: 'Nunito SemiBold', Arial, Helvetica, sans-serif; font-size: 17px; text-align: justify; left: inherit; top: inherit; }
+    .slide-box-image                        { position: relative; min-width: 100vw !important;  max-width: 400px !important; top: 6px; }
+    .mobile-align                           { flex-direction: column !important; justify-content: center; align-items: center; padding: 0px !important; }
+    .logo-mobile                            { position: absolute; bottom: 120px; max-width: 54px; display: block; left: calc(50vw - 30px); }
 }
