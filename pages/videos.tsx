@@ -34,7 +34,7 @@ class VideoPage extends React.Component<WithRouterProps, State> {
     ];
     
     return(
-      <Layout title="Nokta | An innovative & creative agency at your service." className="home-index" router={this.props.router}>
+      <Layout title="Hamza Salhi | Audiovisuel." className="home-index" router={this.props.router}>
         <img src={logo} className="logo-mobile-video" />
         <Slider {...parameters} afterChange={this.change}>
           <Slide>

@@ -8,7 +8,7 @@ import profile    from '../resources/images/profile.jpg';
 class AboutPage extends React.Component<WithRouterProps> {
   render() {
     return(
-      <Layout title="About | We provide a quality service to all your desires." className="about-index" router={this.props.router}>
+      <Layout title="About me." className="about-index" router={this.props.router}>
         <div className="about-div px-10 justify-start flex flex-col items-center py-5">
           <img src={profile} className="profile-image" />
           <p className="self-description mt-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ex velit, iaculis ac enim vel, volutpat placerat arcu. Nam vitae tellus cursus, ultricies elit eu, fermentum ligula. 

@@ -44,7 +44,7 @@ class IndexPage extends React.Component<WithRouterProps, State> {
     ];
     
     return(
-      <Layout title="Nokta | An innovative & creative agency at your service." className="home-index" router={this.props.router}>
+      <Layout title="Hamza Salhi | Portfolio." className="home-index" router={this.props.router}>
         <img src={logo} className="logo-mobile" />
         { this.state.open && this.state.index != 0 && <Lightbox mainSrc={slides[this.state.index]} onCloseRequest={() => { this.setState({ open: false }) }} />}
         <Slider {...parameters} afterChange={this.change}>
